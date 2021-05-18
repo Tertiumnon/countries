@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rm -rf dist && tsc && cp -r src/images dist/images",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "keywords": [
     "country",

@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/Tertiumnon/countries/compare/v0.1.1...v0.1.2) (2021-05-18)
+
+
+### Bug Fixes
+
+* export ([36bce67](https://github.com/Tertiumnon/countries/commit/36bce67371f1b5cf713999890bd9face961d5601))
+
+
+
 # 0.1.0 (2021-05-18)
 
 

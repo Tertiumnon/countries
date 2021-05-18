@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
-    "module": "system",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "outFile": "dist/index.js",
-    "sourceMap": true,
-    "lib": [ "ES2015"],
-    "target": "es5"
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "outDir": "dist/"
   },
-  "include": ["src/index.ts"],
+  "include": ["src/*.ts", "src/localizations/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

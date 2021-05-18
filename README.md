@@ -1,5 +1,7 @@
 # Countries
 
+*Important!* Only EN and RU - please add other languages into [GitHub repo](https://github.com/Tertiumnon/countries)!
+
 ## Get country by name
 
 ```js

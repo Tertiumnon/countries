@@ -2,7 +2,7 @@ import { COUNTRIES, ICountry } from './data';
 import { RU } from './localizations/data.ru';
 
 export const getCountryByName = (name: string, locale?: string): ICountry => {
-  let localizedCountry: ICountry;
+  let localizedCountry: ICountry | undefined;
   switch (locale) {
     case 'ru':
       localizedCountry = RU.find((c) => c.name === name)
@@ -14,7 +14,7 @@ export const getCountryByName = (name: string, locale?: string): ICountry => {
   if (!localizedCountry) {
     throw new Error('Unknown country');
   }
-  const country = locale ? COUNTRIES.find(c => c.alpha2 === localizedCountry.alpha2) : localizedCountry;
+  const country = locale ? COUNTRIES.find(c => c.alpha2 === localizedCountry?.alpha2) : localizedCountry;
   if (!country) {
     throw new Error('Unknown country');
   }

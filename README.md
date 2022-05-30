@@ -2,6 +2,27 @@
 
 *Important!* Only EN and RU - please add other languages into [GitHub repo](https://github.com/Tertiumnon/countries)!
 
+## Get all countries
+
+```js
+const countries = getCountries();
+```
+
+Result:
+
+```js
+[
+  {
+    name: 'Afghanistan',
+    numeric: '004',
+    alpha2: 'AF',
+    alpha3: 'AFG',
+    dial: '93',
+    image: './images/AF.svg',
+  }
+]
+```
+
 ## Get country by name
 
 ```js

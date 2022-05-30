@@ -240,3 +240,5 @@ export const RU: ICountry[] = [
   { name: 'Швейцария', alpha2: 'CH' },
   { name: 'Швеция', alpha2: 'SE' },
 ];
+
+export default RU;

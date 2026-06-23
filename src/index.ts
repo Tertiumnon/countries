@@ -1,13 +1,16 @@
-import { COUNTRIES, ICountry } from './data';
-import { RU } from './localizations/data.ru';
+import { COUNTRIES, Country } from './data/countries';
+import { RU } from './data/countries.ru';
 
-export const getCountries = (): ICountry[] => COUNTRIES;
+export const getCountries = (): Country[] => COUNTRIES;
 
-export const getCountryByName = (name: string, locale?: string): ICountry => {
-  let localizedCountry: ICountry | undefined;
+export const getCountryByName = (name: string, locale?: string): Country => {
+  let localizedCountry: Country | undefined;
   switch (locale) {
     case 'ru':
       localizedCountry = RU.find((c) => c.name === name);
+      break;
+    case 'en':
+      localizedCountry = COUNTRIES.find((c) => c.name === name);
       break;
     default:
       localizedCountry = COUNTRIES.find((c) => c.name === name);

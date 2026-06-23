@@ -1,6 +1,6 @@
-import { ICountry } from '../data';
+import { Country } from './countries';
 
-export const RU: ICountry[] = [
+export const RU: Country[] = [
   { name: 'Австралия', alpha2: 'AU' },
   { name: 'Австрия', alpha2: 'AT' },
   { name: 'Азербайджан', alpha2: 'AZ' },

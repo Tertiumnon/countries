@@ -1,6 +1,6 @@
 {
   "name": "@tertium/countries",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Collection of countries with ISO codes.",
   "main": "dist/index.js",
   "scripts": {
@@ -9,8 +9,7 @@
     "clean": "node node_modules/@tertium/js/scripts/clean.js",
     "release:patch": "node node_modules/@tertium/js/scripts/release.js patch",
     "release:minor": "node node_modules/@tertium/js/scripts/release.js minor",
-    "release:major": "node node_modules/@tertium/js/scripts/release.js major",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "release:major": "node node_modules/@tertium/js/scripts/release.js major"
   },
   "keywords": [
     "country",

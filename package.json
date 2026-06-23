@@ -6,6 +6,10 @@
   "scripts": {
     "build": "tsc",
     "test": "bun test",
+    "clean": "node node_modules/@tertium/js/scripts/clean.js",
+    "release:patch": "node node_modules/@tertium/js/scripts/release.js patch",
+    "release:minor": "node node_modules/@tertium/js/scripts/release.js minor",
+    "release:major": "node node_modules/@tertium/js/scripts/release.js major",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "keywords": [
@@ -17,6 +21,7 @@
   "author": "Vitalii Balabanov",
   "license": "ISC",
   "devDependencies": {
+    "@tertium/js": "^1.4.8",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.16.0",
